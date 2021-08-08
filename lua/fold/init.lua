@@ -112,7 +112,7 @@ function M.foldexpr()
   if line_start < 0 then
     line_start = 0
   end
-  local line_end = lnum + M.config.context
+  local line_end = lnum + M.config.context + 1
   if line_end > line_last then
     line_end = line_last
   end
