@@ -177,7 +177,7 @@ function M.fold_or_unfold()
   end
 end
 
--- NOTE(mortepau): This is required due to &foldexpr and %foldtext expecting functions, which cannot be required from a lua module
+-- NOTE(mortepau): This is required due to &foldexpr and &foldtext expecting functions, which cannot be required from a lua module
 _FOLD = _FOLD or {}
 _FOLD.foldexpr = M.foldexpr
 _FOLD.foldtext = M.foldtext
